@@ -1,0 +1,93 @@
+@import "../../styles.scss";
+
+section {
+  @include flexing;
+  height: 450px;
+  // border: 2px solid red;
+  padding: 40px;
+  .descrption {
+    // border: 2px solid red;
+    height: 300px;
+    width: 30%;
+    margin: 10px;
+
+    h1 {
+      font-size: 32px;
+      color: $dark;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+    p {
+      color: $dark;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+    a {
+      padding: 8px;
+      background-color: transparent;
+      width: 180px;
+      margin-top: 20px;
+      background-color: $secondary;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .cards {
+    @include flexing;
+    // border: 2px solid red;
+    width: 85%;
+    margin-left: 20px;
+    .card {
+      // border: 2px solid red;
+      height: 350px;
+      width: 30%;
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+
+      .before {
+        @include flexing;
+        // margin: auto;
+        justify-content: center;
+        // border: 2px solid red;
+        padding: 10px;
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          background-color: $dark;
+          padding: 5px;
+
+          border-radius: 50%;
+          @include flexing;
+          justify-content: center;
+        }
+      }
+      .info {
+        // border: 2px solid red;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      h2 {
+        font-size: 16px;
+        color: $dark;
+      }
+      p {
+        font-size: 13px;
+        color: $dark;
+      }
+
+      img {
+        height: 70%;
+        width: 90%;
+        object-fit: cover;
+      }
+    }
+  }
+}

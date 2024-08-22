@@ -1,0 +1,45 @@
+@import '../../styles.scss';
+
+section{
+       border: 2px solid yellow;
+       padding: 20px;
+       height: 350px;
+       width: 100%;
+       
+     
+
+
+.cards {
+       text-align: center;
+       border:2px solid red;
+       .carousel {
+         width: 80%;
+         margin: 0 auto;
+     
+         .slide {
+           background: #f9f9f9;
+           padding: 20px;
+           border: 1px solid #ddd;
+           border-radius: 10px;
+         }
+     
+         .images {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin-top: 15px;
+     
+           img {
+             border-radius: 50%;
+             width: 60px;
+             height: 60px;
+             margin-right: 10px;
+           }
+     
+           p {
+             margin: 0;
+           }
+         }
+       }
+     }
+}

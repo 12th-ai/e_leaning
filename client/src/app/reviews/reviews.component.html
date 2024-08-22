@@ -1,0 +1,18 @@
+<section>
+       <div class="cards">
+         <h1>Testimonials</h1>
+         <ngb-carousel *ngIf="testimonials.length > 0">
+           <ng-template ngbSlide *ngFor="let testimonial of testimonials">
+             <div class="slide">
+               <p>{{testimonial.quote}}</p>
+               <div class="images">
+                 <img [src]="testimonial.image" alt="{{testimonial.name}}">
+                 <p>{{testimonial.name}}</p>
+                 <p>{{testimonial.title}}</p>
+               </div>
+             </div>
+           </ng-template>
+         </ngb-carousel>
+       </div>
+     </section>
+     

@@ -1,0 +1,21 @@
+<section>
+       
+       <div class="title">
+              <h1>recent blogs</h1>
+             <a href="">view all blogs</a>
+       </div>
+
+       <div class="blogs">
+              <div class="blog"  *ngFor=" let blog of blogs">
+
+                   <div class="image">
+                     <img [src]="blog.imageUrl" alt="">
+                   </div>
+                   <div class="paragraph">
+                     <p>First Time Home Owner Ideas</p>
+                     <p>by Kristin Watson on Dec 19, 2021</p>
+                   </div>
+                </div>
+
+       </div>
+</section>

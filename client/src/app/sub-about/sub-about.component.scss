@@ -1,0 +1,22 @@
+@import '../../styles.scss';
+
+section{
+       .section-one,
+       .section-two{
+       border: 2px solid red;
+       height: 500px;
+       padding: 20px;
+       @include flexing;
+
+       .images-section{
+              border: 2px solid green;
+              width: 50%;
+              height: 100%;
+       }
+       .description-section{
+              border: 2px solid red;
+              width: 50%;
+              height: 100%;
+       }
+       }
+}

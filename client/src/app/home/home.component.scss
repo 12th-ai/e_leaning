@@ -1,0 +1,19 @@
+@import '../../styles.scss';
+
+
+section{
+       border: 2px solid red;
+       @include flexing;
+       border: 2px solid red;
+       height: 180px;
+       padding: 10px;
+
+       .card{
+              border: 2px solid blue;
+              height: 100%;
+              width: 40%;
+              margin: 10px;
+       }
+       
+}
+
